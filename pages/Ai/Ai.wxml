@@ -1,0 +1,30 @@
+<cu-custom bgColor="bg-gradual-blue back" isBack="{{true}}">
+	<view slot="backText" bindtap="back">返回</view>
+</cu-custom>
+<view class="cu-chat backBug">
+  <view wx:for="{{msg}}"  class="{{item.position == 'left' ? 'cu-item':'cu-item self'}}">
+    <view wx:if="{{item.position == 'left' ? true:false}}" class="cu-avatar radius" style="background-image:url(http://img2.imgtn.bdimg.com/it/u=103164348,1334940944&fm=26&gp=0.jpg);"></view>
+    <view class="main">
+      <view class="{{item.position == 'left' ? 'content shadow bg-grey':'content bg-green shadow'}}">
+        <text>{{item.msg}}</text>
+      </view>
+    </view>
+    <view wx:if="{{item.position == 'left' ? false : true}}" class="cu-avatar radius" style="background-image:url({{userImg}})"></view>
+  </view>
+  <!-- <view class="cu-item">
+    <view class="main">
+      <view class="content shadow">
+        <text>喵喵喵！喵喵喵！</text>
+      </view>
+    </view>
+  </view> -->
+</view>
+
+<view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
+  <view class="action">
+    <text class="cuIcon-sound text-grey"></text>
+  </view>
+  <input value="{{ value }}" class="solid-bottom" bindinput="inputIn" bindfocus="InputFocus" bindblur="InputBlur" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <button class="cu-btn bg-green shadow" bindtap="chat">发送</button>
+</view>
+<audio src="{{src}}" id="myAudio"></audio>

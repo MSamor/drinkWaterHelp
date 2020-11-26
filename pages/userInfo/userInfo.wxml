@@ -1,0 +1,51 @@
+<cu-custom bgColor="bg-gradual-blue back" isBack="{{true}}">
+	<view slot="backText">返回</view>
+</cu-custom>
+<view class="backBug cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+	<view class="cu-item {{menuArrow?'arrow':''}}">
+		<view class="content">
+			<text class="cuIcon-tagfill text-red"></text>
+			<text class="text-grey">昵称</text>
+		</view>
+		<view class="action">
+			<view class="cu-tag round bg-olive light">{{user.info.nickName}}</view>
+		</view>
+	</view>
+	<view class="cu-item {{menuArrow?'arrow':''}}">
+		<view class="content">
+			<text class="cuIcon-tagfill text-red"></text>
+			<text class="text-grey">国籍</text>
+		</view>
+		<view class="action">
+			<view class="cu-tag round bg-olive light">{{user.info.country}}</view>
+		</view>
+	</view>
+	<view class="cu-item {{menuArrow?'arrow':''}}">
+		<view class="content">
+			<text class="cuIcon-tagfill text-red"></text>
+			<text class="text-grey">省份</text>
+		</view>
+		<view class="action">
+			<view class="cu-tag round bg-olive light">{{user.info.province}}</view>
+		</view>
+	</view>
+	<view class="cu-item {{menuArrow?'arrow':''}}">
+		<view class="content">
+			<text class="cuIcon-tagfill text-red"></text>
+			<text class="text-grey">性别</text>
+		</view>
+		<view class="action">
+			<view class="cu-tag round bg-olive light">{{user.info.gender == 1?'男':'女'}}</view>
+		</view>
+	</view>
+	<view class="cu-item {{menuArrow?'arrow':''}}">
+		<view class="content">
+			<text class="cuIcon-tagfill text-red"></text>
+			<text class="text-grey">城市</text>
+		</view>
+		<view class="action">
+			<view class="cu-tag round bg-olive light">{{user.info.city}}</view>
+		</view>
+	</view>
+</view>
+

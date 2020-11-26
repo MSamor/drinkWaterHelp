@@ -1,0 +1,17 @@
+page{
+  padding-bottom: 100rpx;
+}
+.back {
+  height: 140rpx;
+  padding-top: 20px;
+}
+.backBug {
+  margin-top:140rpx;
+}
+.cu-chat .cu-item {
+  padding: 30rpx 30rpx 30rpx;
+
+}
+button {
+  width: 120rpx!important;
+}

@@ -1,0 +1,23 @@
+<!-- <view class="container" wx:if="{{hasUserInfo}}" style="margin-top:0rpx"> -->
+	<!-- <image style="width:100%;" src="https://vivobbs.vivo.com.cn/wiwNWYCFW9ieGbWq/20200430/4e3aeacf94e8bb1f64c815e0d3d4ce58_w600_h366.jpg"></image>
+
+	<view class="loginCss">
+		1.记录你的一天喝水时间
+	</view>
+	<view class="loginCss">
+		2.AI智能对话
+	</view>
+
+	<view class="userinfo">
+		<button class="cu-btn block bg-blue margin-tb-sm lg" loading open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+		立即使用 </button>
+	</view> -->
+<!-- </view> -->
+
+<!-- <view wx:if="{{!hasUserInfo}}"> -->
+	<view class="margin flex bg-white center">
+		<view class="bg-white flex-sub radius shadow-lg centerImg">
+			<image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response imgcenter"></image>
+		</view>
+	</view>
+<!-- </view> -->

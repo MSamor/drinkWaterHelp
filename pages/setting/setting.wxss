@@ -1,0 +1,7 @@
+.back {
+  height: 140rpx;
+  padding-top: 20px;
+}
+.backBug {
+  margin-top: 140rpx;
+}
